@@ -20,6 +20,19 @@
     "test": "jest",
     "eject": "react-scripts eject"
   },
+  "jest": {
+    "rootDir": "src",
+    "modulePaths": ["<rootDir>/src"],
+    "coveragePathIgnorePatterns": ["<rootDir>/node_modules/"],
+    "moduleFileExtensions": ["js", "jsx"],
+    "moduleDirectories": ["node_modules", "bower_components", "src"],
+    "transform": {
+        "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|scss|css)$": "<rootDir>/fileTransformer.js",
+        "^.+\\.(js|jsx)$": "babel-jest"
+    },
+    "transformIgnorePatterns": ["<rootDir>/node_modules/"],
+    "testEnvironment": "jsdom"
+},
   "eslintConfig": {
     "extends": [
       "react-app",

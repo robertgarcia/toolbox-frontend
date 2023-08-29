@@ -1,0 +1,6 @@
+{
+    "compilerOptions": {
+        "baseUrl": "."
+    },
+    "include": ["src", "fileTransformer.js", "src/__tests__", "src/__test__"]
+}
